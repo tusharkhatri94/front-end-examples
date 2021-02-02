@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App :: Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/game.css" type="text/css">
+    <!--[if lt IE 9]>
+        <script src=" http://html5shim.googlecode.com/svn/trunk/html5.js ">
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div id="loader"></div>
+        <div id="game" class="box hide" >
+            <div id="timer"></div>
+            <div id="display-box">
+                <div class="display-item">
+                    <p>Question</p>
+                    <p id="counter">1/3</p>
+                </div>
+                <div class="display-item">
+                    <p>Score</p>
+                    <p id="score">0</p>
+                </div>
+            </div>
+            <h2 id="question"></h2>
+            <div class="choice-box">
+                <p class="prefix">A</p>
+                <p class="text" data-index = "1"></p>
+            </div>
+            <div class="choice-box">
+                <p class="prefix">B</p>
+                <p class="text" data-index = "2"></p>
+            </div>
+            <div class="choice-box">
+                <p class="prefix">C</p>
+                <p class="text" data-index = "3"></p>
+            </div>
+            <div class="choice-box">
+                <p class="prefix">D</p>
+                <p class="text" data-index = "4"></p>
+            </div>  
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+    
+</html>

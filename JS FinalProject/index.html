@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!--[if lt IE 9]>
+        <script src=" http://html5shim.googlecode.com/svn/trunk/html5.js ">
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="box" >
+            <h1>Quiz App</h1>
+            <p id="selectedTheme"></p>
+            <a class="btn" href="game.html">Play</a>
+            <a class="btn" href="highScore.html">HighScore</a>            
+        </div>
+        <div id="accordion">
+          <h3 class="headingBtn">Instructions</h3>
+          <div class="instuctionBox">
+            <p>Choose the Theme</p>
+            <p>Each Game has 10 questions</p>
+            <p>Total Time is 50 seconds</p>
+            <p>Save your score at the end</p>
+          </div>
+          <h3 class="headingBtn">Themes</h3>
+          <div class="themeBox">
+            <button class="themeBtn" onclick = "chooseCategory('Any')">Any Category</button>
+            <button class="themeBtn" onclick = "chooseCategory('General')">General Knowledge</button>
+            <button class="themeBtn" onclick = "chooseCategory('Entertainment')">Entertainment</button>
+            <button class="themeBtn" onclick = "chooseCategory('Sports')">Sports</button>
+            <button class="themeBtn" onclick = "chooseCategory('Computers')">Computers</button>
+          </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+    
+</html>

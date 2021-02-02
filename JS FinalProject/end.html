@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App :: Congratulations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!--[if lt IE 9]>
+        <script src=" http://html5shim.googlecode.com/svn/trunk/html5.js ">
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="box" >
+            <h1 id="finalScore">0</h1>
+            <form>
+                <div class="inline">
+                    <input type="text" name="username" id="user" placeholder="Enter Username"><span id="spanName"></span>
+                </div>
+                <div class="inline">
+                    <input type="text" name="age" id="age" placeholder="Age"><span id="spanAge"></span>
+                </div>
+                <div class="inline">
+                    <input type="email" name="email" id="userEmail" placeholder="Email"><span id="spanEmail"></span>
+                </div>
+                <button type="submit" disabled class="btn" id="saveBtn" onclick="saveScore(event)">Save</button>
+            </form>
+            <div id ="validation">
+                Please fill out the form
+            </div>
+            <a href="game.html" class = "btn">Play again</a>
+            <a href="index.html" class="btn">Go Home</a>
+        </div>
+    </div>
+    <script src="js/end.js"></script>
+</body>
+    
+</html>
