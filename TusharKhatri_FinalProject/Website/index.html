@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iLearn Dream</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="e-Learning Website Homepage">
+    <meta name="author" content="Tushar Khatri">
+    <link  rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <!--[if lt IE 9]>
+        <script src=" http://html5shim.googlecode.com/svn/trunk/html5.js ">
+        </script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <header role="banner">
+                <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+            </header>
+            <form class="form-inline my-2 my-lg-0" role="search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <nav role="navigation">
+                <div class="dropdown drop-container">
+                    <button role="button" class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="Courses.html">Courses</a>
+                        <a class="dropdown-item" href="ebooks.html">eBooks</a>
+                        <a class="dropdown-item" href="plans.html">Plans</a>
+                        <a class="dropdown-item" href="about.html">About Us</a>
+                        <a class="dropdown-item" href="login.html">Log in</a>
+                    </div>
+                </div>
+                <ul class= "nav-container">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Courses.html">Courses</a></li>
+                        <li><a href="plans.html">Plans</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="ebooks.html">eBooks</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main role="main">
+            <div id="banner-slider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                   <li data-target="#banner-slider" data-slide-to="0" class="active"></li>
+                   <li data-target="#banner-slider" data-slide-to="1"></li>
+                   <li data-target="#banner-slider" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="box">
+                            <div>
+                                <div class="my-2">
+                                    <p class="date d-inline">Released 2019</p>
+                                    <p class="badge d-inline">FEATURED</p>
+                                </div>
+                                <h2>Essential HTML Design</h2>
+                                <h3 class = "h3-carousel">Mastering Hypertext Markup Language (HTML) for Web Browsers</h3>
+                                <p class="instructor-name">By John Gabrielle</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="img-fluid" alt="HTML">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div>
+                                <div class="my-2">
+                                    <p class="date d-inline">Released 2019</p>
+                                    <p class="badge d-inline">POPULAR</p>
+                                </div>
+                                <h2>CSS Essential Training</h2>
+                                <h3 class = "h3-carousel">Cascading Style Sheets Training for Web Design</h3>
+                                <p class="instructor-name">By Jacobs Moose</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1518085250887-2f903c200fee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="img-fluid" alt="cars">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">    
+                        <div class="box">
+                            <div>
+                                <p class="date my-2">Released 2018</p>
+                                <h2>Learning Javascript and JQuery</h2>
+                                <h3 class = "h3-carousel">JS and JQuery essential training for Web Developers.</h3>
+                                <p class="instructor-name">By Collin Warner</p>
+                            </div>
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="img-fluid" alt="cars">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#banner-slider" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#banner-slider" data-slide="next">
+            <span class="carousel-control-next-icon"></span></a>
+            
+            <hr>
+            <div class="container my-2">
+                <h3 class="text-dark font-weight-bold">Trending Courses</h3>
+                <div class="row justify-content-around">
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png" alt="Data Science Image">
+                        <h5 class="my-2">Data Science</h5>
+                        <p class="instructor-name">By Simon Sullivan</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2017/09/25/18/56/social-media-2786261__340.jpg" alt="Web Applications">
+                        <h5 class="my-2">Web Applications</h5>
+                        <p class="instructor-name">By Harvey Jonathon</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_960_720.png" alt="cars">
+                        <h5 class="my-2">Responsive Design</h5>
+                        <p class="instructor-name">By Tim Matthew</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2018/06/08/00/48/developer-3461405__340.png" alt="cars">
+                        <h5 class="my-2">Machine Learning</h5>
+                        <p class="instructor-name">By Kim Gomez</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container my-2">
+                <h3 class="text-dark font-weight-bold">Most Popular Courses</h3>
+                <div class="row justify-content-around">
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2020/02/19/07/48/web-4861605__340.jpg" alt="Artificial Intelligence">
+                        <h5 class="my-2">Artificial Intelligence</h5>
+                        <p class="instructor-name">By Kathy Adams</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2016/11/29/09/32/concept-1868728_960_720.jpg" alt="Analytics">
+                        <h5 class="my-2">Analytics</h5>
+                        <p class="instructor-name">By Timberly Davilla</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2018/05/28/11/51/woman-3435842__340.jpg" alt="Stress Management">
+                        <h5 class="my-2">Stress Management</h5>
+                        <p class="instructor-name">By Jean Butler</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center course-content">
+                        <img class ="img-fluid my-2 border" src="https://cdn.pixabay.com/photo/2016/07/29/06/44/park-1550733__340.jpg" alt="Architecture of Park">
+                        <h5 class="my-2">Architecture</h5>
+                        <p class="instructor-name">By Sam Carey</p>
+                    </div>
+                </div>
+            </div>
+            <br><hr>
+        </main>
+        <footer class="disp-in" role="contentinfo">
+            <p>Copyright &copy; 2020 iLearn Dream</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p><a href="plans.html">Subscribe</a></p>
+            <div>
+                <img class ="social" src="images/icons8-facebook-100.png" alt="facebook page">
+                <img class ="social" src="images/icons8-instagram-100.png" alt="instagram page">
+                <img class ="social" src="images/icons8-twitter-100.png" alt="twitter page">
+                <img class ="social" src="images/icons8-youtube-squared-100.png" alt="youtube page">
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
